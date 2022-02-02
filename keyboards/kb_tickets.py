@@ -24,7 +24,7 @@ def get_kb_inl_ticket(ticket_num, field=None, accepted: bool = True):
     kb_inl_ticket_btn_3 = types.InlineKeyboardButton(text="Ticket",
                                                      callback_data=cb_ticket_data.new(action='ticket',
                                                                                       ticket_number=ticket_num))
-    kb_inl_ticket_btn_4 = types.InlineKeyboardButton(text="Accepted",
+    kb_inl_ticket_btn_4 = types.InlineKeyboardButton(text="Accept",
                                                      callback_data=cb_ticket_data.new(action='accepted',
                                                                                       ticket_number=ticket_num))
     if not field:
